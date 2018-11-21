@@ -12,10 +12,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-    /** Vor Sie den Code lessen, id "mouse" in activity_main.xml gehört zu dem {@keyboard checkBox}
-     *  und id "keyboard" in activity_main.xml gehört zu dem  {@mouse checkbox}
-     **/
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,14 +65,14 @@ public class MainActivity extends AppCompatActivity {
         return quantity * 100;
     }
 
-    private String createOrderSummery (int price, boolean addMouseCheckBox, boolean addKeyboardCheckBox){
+    private String createOrderSummery (int price, boolean addKeyboardCheckBox, boolean addMouseCheckBox){
         String priceMessage = "Thanks for using the App!";
 
-        priceMessage +="\nadd keyboard? " + addKeyboardCheckBox;
+        priceMessage +="\nAdd Keyboard? " + addKeyboardCheckBox;
         if (addKeyboardCheckBox) {
             price = price + 10;
         }
-        priceMessage +="\nadd mouse? " + addMouseCheckBox;
+        priceMessage +="\nAdd Mouse? " + addMouseCheckBox;
         if (addMouseCheckBox){
             price = price +5;
         }
