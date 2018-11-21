@@ -27,12 +27,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Mouse, +5€"
-        android:id="@+id/keyboard"/>
+        android:id="@+id/mouse"/>
     <CheckBox
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Keyboard, +10€"
-        android:id="@+id/mouse"
+        android:id="@+id/keyboard"
         android:layout_marginBottom="7dp"/>
     <LinearLayout
         android:layout_width="wrap_content"
@@ -60,7 +60,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Buy"
+        android:text="Order"
         android:onClick="buyMessage"
         android:layout_marginBottom="7dp"
 
